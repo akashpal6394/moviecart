@@ -1,12 +1,43 @@
-# React + Vite
+# 🎬 MovieCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MovieCart is a React-based web app that displays popular movies using a public API. Users can browse movies on the homepage and add their favorite movies to a dedicated favorites page. Favorite selections are stored using the browser's local storage to ensure persistence across sessions.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search and browse popular movies**
+- ❤️ **Add and view favorite movies**
+- 💾 **Favorites saved using browser localStorage**
+- ⚛️ **Built using React, React Router, and Hooks**
+- 📱 **Responsive layout for all device sizes**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🛠️ Tech Stack
+
+- **React** (with functional components and hooks)
+- **React Router DOM**
+- **JavaScript (ES6+)**
+- **CSS3**
+
+## 🧠 How It Works
+
+- On load, the **Home Page** fetches popular movies using the `getPopularMovies()` API function.
+- Users can **search movies** via an input bar.
+- Each movie is displayed as a **card** with relevant information.
+- Users can click a button to **add/remove** movies from favorites.
+- The **Favorites Page** reads the stored data from `localStorage` and displays the list of favorite movies.
+
+## 🧰 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/moviecart.git
+cd moviecart
+npm install
+npm run dev
